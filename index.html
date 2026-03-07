@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Download Internet Of Tsiken - IoT-Based Smart Brooder System with Predator Alert. Academic capstone project for Android.">
+    <meta name="keywords" content="IoT, Smart Brooder, Predator Alert, YOLOv8, Raspberry Pi, ESP32, React Native">
+    <title>Internet Of Tsiken - APK Download</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&family=Roboto+Mono&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="text-text-primary">
+
+    <!-- Header -->
+    <header class="glass-card sticky top-0 z-50 m-4">
+        <nav class="container mx-auto px-4 lg:px-6 py-3 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3">
+                <div
+                    class="w-10 h-10 bg-primary/10 border-2 border-primary-glow rounded-lg flex items-center justify-center pulse">
+                    <span class="text-white font-bold text-lg font-orbitron">IoT</span>
+                </div>
+                <span class="font-bold text-xl self-center whitespace-nowrap text-gradient">Internet Of Tsiken</span>
+            </a>
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="#features"
+                    class="text-base font-semibold text-text-secondary hover:text-primary-glow">Features</a>
+                <a href="#requirements"
+                    class="text-base font-semibold text-text-secondary hover:text-primary-glow">Requirements</a>
+                <a href="#installation"
+                    class="text-base font-semibold text-text-secondary hover:text-primary-glow">Install</a>
+                <a href="#team" class="text-base font-semibold text-text-secondary hover:text-primary-glow">Team</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#download" class="btn btn-primary hidden sm:inline-block">
+                    Download
+                </a>
+                <button id="mobile-menu-button"
+                    class="lg:hidden p-2 rounded-md text-text-primary hover:bg-background-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-glow">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-border-color">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#features"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-text-secondary hover:text-primary-glow hover:bg-background-light">Features</a>
+                <a href="#requirements"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-text-secondary hover:text-primary-glow hover:bg-background-light">Requirements</a>
+                <a href="#installation"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-text-secondary hover:text-primary-glow hover:bg-background-light">Install</a>
+                <a href="#team"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-text-secondary hover:text-primary-glow hover:bg-background-light">Team</a>
+                <a href="#download"
+                    class="block mt-2 w-full text-center px-3 py-2 rounded-md text-base font-medium btn btn-primary">Download
+                    APK</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="section-padding">
+        <div class="container mx-auto px-4 lg:px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight text-gradient">
+                Internet of Tsiken
+            </h1>
+            <p class="text-lg md:text-xl text-text-secondary max-w-3xl mx-auto mb-8">
+                Monitor and protect your poultry with intelligent temperature control and real-time predator
+                detection, all from a dedicated mobile application.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="#download" id="downloadBtn" class="btn btn-primary">Download APK v1.0.0</a>
+                <a href="#features" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section-padding">
+        <div class="container mx-auto px-4 lg:px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-extrabold">Key Features</h2>
+                <p class="text-lg text-text-secondary mt-2">Intelligent tools for modern poultry farming.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Feature 1 -->
+                <div class="glass-card p-8 text-center animated-border">
+                    <div class="mb-5">
+                        <div
+                            class="w-16 h-16 bg-background-medium text-primary-glow rounded-xl flex items-center justify-center mx-auto pulse">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Real-Time Monitoring</h3>
+                    <p class="text-text-secondary">Track brooder temperature, humidity, and environmental conditions in
+                        real-time via <span class="font-semibold text-primary-glow code-font">ESP32 sensors</span>.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="glass-card p-8 text-center animated-border">
+                    <div class="mb-5">
+                        <div
+                            class="w-16 h-16 bg-background-medium text-primary-glow rounded-xl flex items-center justify-center mx-auto pulse">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Predator Alert System</h3>
+                    <p class="text-text-secondary">Receive instant mobile notifications when predators are detected near
+                        the
+                        brooder via a <span class="font-semibold text-primary-glow code-font">YOLOv8n model</span> on a
+                        <span class="font-semibold text-primary-glow code-font">Raspberry Pi</span>.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="glass-card p-8 text-center animated-border">
+                    <div class="mb-5">
+                        <div
+                            class="w-16 h-16 bg-background-medium text-primary-glow rounded-xl flex items-center justify-center mx-auto pulse">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Mobile Control Hub</h3>
+                    <p class="text-text-secondary">Manage settings, view live data, and access historical analytics
+                        through a
+                        dedicated <span class="font-semibold text-primary-glow code-font">React Native</span> mobile
+                        app.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Requirements Section -->
+    <section id="requirements" class="section-padding">
+        <div class="container mx-auto px-4 lg:px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-extrabold">System Requirements</h2>
+                <p class="text-lg text-text-secondary mt-2">What you'll need to run the application.</p>
+            </div>
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                <div class="glass-card p-8 animated-border">
+                    <h3 class="text-2xl font-bold mb-4 text-gradient">Hardware</h3>
+                    <ul class="space-y-3 text-text-secondary">
+                        <li class="flex items-center"><span class="text-primary-glow mr-3">&#9679;</span> Raspberry Pi 5
+                            (or equivalent)</li>
+                        <li class="flex items-center"><span class="text-primary-glow mr-3">&#9679;</span> ESP32
+                            Microcontroller</li>
+                        <li class="flex items-center"><span class="text-primary-glow mr-3">&#9679;</span> DHT22 Sensor
+                            (Temperature/Humidity)</li>
+                        <li class="flex items-center"><span class="text-primary-glow mr-3">&#9679;</span> 5V Relay
+                            Module & Heating Element</li>
+                        <li class="flex items-center"><span class="text-primary-glow mr-3">&#9679;</span> Pi Camera
+                            Module</li>
+                    </ul>
+                </div>
+                <div class="glass-card p-8 animated-border">
+                    <h3 class="text-2xl font-bold mb-4 text-gradient">Software</h3>
+                    <ul class="space-y-3 text-text-secondary">
+                        <li class="flex items-center"><span class="text-primary-glow mr-3">&#9679;</span> Android Device
+                            (OS 8.0 Oreo or newer)</li>
+                        <li class="flex items-center"><span class="text-primary-glow mr-3">&#9679;</span> Python 3.9+ on
+                            Raspberry Pi</li>
+                        <li class="flex items-center"><span class="text-primary-glow mr-3">&#9679;</span> PyTorch and
+                            OpenCV libraries</li>
+                        <li class="flex items-center"><span class="text-primary-glow mr-3">&#9679;</span> Arduino IDE
+                            for ESP32 programming</li>
+                        <li class="flex items-center"><span class="text-primary-glow mr-3">&#9679;</span> Stable Wi-Fi
+                            Connection</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Guide -->
+    <section id="installation" class="section-padding">
+        <div class="container mx-auto px-4 lg:px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-extrabold">Installation Guide</h2>
+                <p class="text-lg text-text-secondary mt-2">Get started in three simple steps.</p>
+            </div>
+            <div class="max-w-2xl mx-auto">
+                <div class="space-y-12 relative">
+                    <!-- Vertical line -->
+                    <div class="absolute left-5 top-5 bottom-5 w-0.5 bg-border-color"></div>
+
+                    <!-- Step 1 -->
+                    <div class="relative flex items-start">
+                        <div
+                            class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-primary-glow bg-background-medium flex-shrink-0 z-10 pulse">
+                            <span class="font-bold">1</span>
+                        </div>
+                        <div class="ml-6">
+                            <h3 class="text-lg font-bold mb-1">Download the APK</h3>
+                            <p class="text-text-secondary">Click the download button on this page to get the <span
+                                    class="code-font">.apk</span> file.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="relative flex items-start">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-primary-glow bg-background-medium flex-shrink-0 z-10 pulse"
+                            style="animation-delay: 0.2s;">
+                            <span class="font-bold">2</span>
+                        </div>
+                        <div class="ml-6">
+                            <h3 class="text-lg font-bold mb-1">Enable Unknown Sources</h3>
+                            <p class="text-text-secondary">Go to <span class="code-font">Settings > Security</span> and
+                                allow installation from unknown sources. This path may vary by device.</p>
+                        </div>
+                    </div>
+
+                    <!--Step 3 -->
+                    <div class="relative flex items-start">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-primary-glow bg-background-medium flex-shrink-0 z-10 pulse"
+                            style="animation-delay: 0.4s;">
+                            <span class="font-bold">3</span>
+                        </div>
+                        <div class="ml-6">
+                            <h3 class="text-lg font-bold mb-1">Install & Launch</h3>
+                            <p class="text-text-secondary">Open the downloaded file and tap <span
+                                    class="font-semibold text-primary-glow">"Install"</span>. Once finished, open the
+                                app and grant the required permissions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="section-padding">
+        <div class="container mx-auto px-4 lg:px-6">
+            <div class="glass-card p-8 md:p-12 max-w-3xl mx-auto animated-border">
+                <div class="text-center">
+                    <h2 class="text-3xl font-extrabold mb-2 text-gradient">Get Internet Of Tsiken</h2>
+                    <p class="text-lg text-text-secondary mb-6">Download the latest version for Android.</p>
+                </div>
+
+                <div class="bg-background-dark/50 rounded-lg p-6 border border-border-color">
+                    <div class="md:flex items-center justify-between">
+                        <div class="mb-4 md:mb-0">
+                            <h3 class="text-xl font-bold">Android APK (v1.0.0)</h3>
+                            <p class="text-text-secondary text-sm">File Size: 45.2 MB</p>
+                        </div>
+                        <button class="btn btn-primary w-full md:w-auto">
+                            Download Now
+                        </button>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-border-color">
+                        <p class="text-xs text-text-secondary code-font">
+                            <span class="font-bold">SHA-256:</span>
+                            a3b5c7d9e1f2a4b6c8d0e2f4a6b8c0d2e4f6a8b0c2d4e6f8a0b2c4d6e8f0a2b4
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Context & Team -->
+    <section id="team" class="section-padding">
+        <div class="container mx-auto px-4 lg:px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-extrabold">Academic Context & Team</h2>
+                <p class="text-lg text-text-secondary mt-2">This project was developed as an academic capstone.</p>
+            </div>
+
+            <!-- Project Overview -->
+            <div class="max-w-4xl mx-auto glass-card p-8 mb-12 animated-border">
+                <h3 class="text-2xl font-bold mb-4 text-gradient">Project Overview</h3>
+                <p class="text-text-secondary leading-relaxed mb-6">
+                    Internet Of Tsiken is a capstone project demonstrating the integration of IoT hardware, computer
+                    vision, and mobile application development for agricultural automation. The system addresses
+                    real-world poultry farming challenges through intelligent brooder management and predator detection,
+                    evaluated against the ISO/IEC 25010 standard for software quality.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-6 mt-6">
+                    <!-- Technology Stack -->
+                    <div>
+                        <h4 class="font-bold text-lg mb-3">Technology Stack</h4>
+                        <ul class="space-y-2 text-text-secondary">
+                            <li class="flex items-start"><span
+                                    class="font-bold text-primary-glow mr-2 mt-1.5">&#8226;</span>Frontend: React Native
+                                (Expo)</li>
+                            <li class="flex items-start"><span
+                                    class="font-bold text-primary-glow mr-2 mt-1.5">&#8226;</span>Computer Vision:
+                                YOLOv8n</li>
+                            <li class="flex items-start"><span
+                                    class="font-bold text-primary-glow mr-2 mt-1.5">&#8226;</span>Hardware: Raspberry Pi
+                                5, ESP32</li>
+                        </ul>
+                    </div>
+
+                    <!-- Evaluation Standards -->
+                    <div>
+                        <h4 class="font-bold text-lg mb-3">Evaluation Standards</h4>
+                        <ul class="space-y-2 text-text-secondary">
+                            <li class="flex items-start"><span
+                                    class="font-bold text-primary-glow mr-2 mt-1.5">&#8226;</span>Framework: ISO/IEC
+                                25010</li>
+                            <li class="flex items-start"><span
+                                    class="font-bold text-primary-glow mr-2 mt-1.5">&#8226;</span>Focus: Functional
+                                Suitability, Usability</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Development Team -->
+            <div class="max-w-2xl mx-auto">
+                <h3 class="text-2xl font-bold text-center mb-8">Development Team</h3>
+                <div class="space-y-6">
+                    <!-- Team Lead -->
+                    <div class="glass-card p-6 text-center">
+                        <h4 class="text-lg font-bold">[Team Lead Name]</h4>
+                        <p class="text-primary-glow font-semibold">Systems Analyst & Project Lead</p>
+                    </div>
+
+                    <!-- Member 2 -->
+                    <div class="glass-card p-6 text-center">
+                        <h4 class="text-lg font-bold">[Team Member Name]</h4>
+                        <p class="text-primary-glow font-semibold">Hardware & IoT Specialist</p>
+                    </div>
+
+                    <!-- Member 3 -->
+                    <div class="glass-card p-6 text-center">
+                        <h4 class="text-lg font-bold">[Team Member Name]</h4>
+                        <p class="text-primary-glow font-semibold">Mobile App Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-border-color mt-16">
+        <div class="container mx-auto px-4 lg:px-6 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-sm text-text-secondary mb-4 md:mb-0">
+                    &copy; 2026 Internet Of Tsiken. An Academic Project.
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="https://github.com/your-repo" target="_blank" rel="noopener noreferrer"
+                        class="text-text-secondary hover:text-primary-glow">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.942.359.308.678.92.678 1.855 0 1.338-.012 2.419-.012 2.745 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

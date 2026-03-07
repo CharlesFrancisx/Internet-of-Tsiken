@@ -1,0 +1,22 @@
+{
+  "name": "internet-of-tsiken-landing",
+  "version": "1.0.0",
+  "description": "Static landing page for Internet Of Tsiken APK distribution",
+  "main": "index.html",
+  "scripts": {
+    "serve": "npx serve . -p 8000",
+    "deploy": "vercel --prod",
+    "deploy:preview": "vercel"
+  },
+  "keywords": [
+    "iot",
+    "smart-brooder",
+    "react-native",
+    "yolov8",
+    "raspberry-pi",
+    "apk-download"
+  ],
+  "author": "Internet Of Tsiken Team",
+  "license": "MIT",
+  "devDependencies": {}
+}
