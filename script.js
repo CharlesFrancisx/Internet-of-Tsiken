@@ -4,9 +4,9 @@
   // --- CONFIGURATION ---
   const CONFIG = {
     apkUrl:
-      "https://github.com/[YourUsername]/[YourRepo]/releases/download/v1.0.0/internet-of-tsiken-v1.0.0.apk",
+      "https://github.com/CharlesFrancisx/Internet-of-Tsiken/releases/download/test-release/Internet-of-Tsiken-v1.0.0.apk",
     version: "1.0.0",
-    fileName: "Internet-Of-Tsiken-v1.0.0.apk",
+    fileName: "Internet-of-Tsiken-v1.0.0.apk",
     analyticsEndpoint: null, // Optional: Replace with your analytics endpoint
   };
 
@@ -38,7 +38,7 @@
     // The new design might have multiple download buttons.
     // We select them by a shared class or attribute if needed, but for now, let's find all relevant buttons.
     const downloadButtons = document.querySelectorAll(
-      "#downloadBtn, #download .btn-accent",
+      "#downloadBtn, #downloadNowBtn",
     );
 
     if (downloadButtons.length === 0) {
