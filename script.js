@@ -4,11 +4,11 @@
   // --- CONFIGURATION ---
   const CONFIG = {
     apkUrl:
-      "https://github.com/CharlesFrancisx/Internet-of-Tsiken/releases/download/pre-release-v1.0.0/Internet-of-Tsiken-v2.0.0.apk",
-    version: "1.0.0",
-    fileName: "Internet-of-Tsiken-v1.0.0.apk",
+      "https://github.com/CharlesFrancisx/Internet-of-Tsiken/releases/download/pre-release/Internet-of-Tsiken-v2.0.0.apk",
+    version: "2.0.0",
+    fileName: "Internet-of-Tsiken-v2.0.0.apk",
     githubRepo: "CharlesFrancisx/Internet-of-Tsiken",
-    releaseTag: "test-release", // Must match the tag name on GitHub Releases
+    releaseTag: "pre-release", // Must match the tag name on GitHub Releases
     analyticsEndpoint: null,
   };
 
