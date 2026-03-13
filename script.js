@@ -4,10 +4,12 @@
   // --- CONFIGURATION ---
   const CONFIG = {
     apkUrl:
-      "https://github.com/CharlesFrancisx/Internet-of-Tsiken/releases/download/test-release/Internet-of-Tsiken-v1.0.0.apk",
+      "https://github.com/CharlesFrancisx/Internet-of-Tsiken/releases/download/pre-release-v1.0.0/Internet-of-Tsiken-v2.0.0.apk",
     version: "1.0.0",
     fileName: "Internet-of-Tsiken-v1.0.0.apk",
-    analyticsEndpoint: null, // Optional: Replace with your analytics endpoint
+    githubRepo: "CharlesFrancisx/Internet-of-Tsiken",
+    releaseTag: "test-release", // Must match the tag name on GitHub Releases
+    analyticsEndpoint: null,
   };
 
   // --- INITIALIZATION ---
@@ -15,7 +17,39 @@
     initializeMobileMenu();
     initializeDownloadButtons();
     initializeSmoothScroll();
+    fetchApkInfo();
   });
+
+  /**
+   * Fetches the latest release info from the GitHub API and updates the UI.
+   */
+  function fetchApkInfo() {
+    const apiUrl = `https://api.github.com/repos/${CONFIG.githubRepo}/releases/tags/${CONFIG.releaseTag}`;
+    const fileSizeEl = document.getElementById("apk-file-size");
+
+    fetch(apiUrl)
+      .then((res) => {
+        if (!res.ok) throw new Error(`GitHub API error: ${res.status}`);
+        return res.json();
+      })
+      .then((data) => {
+        const apkAsset = data.assets.find((a) => a.name.endsWith(".apk"));
+        if (apkAsset) {
+          if (fileSizeEl) {
+            const sizeInMB = (apkAsset.size / (1024 * 1024)).toFixed(1);
+            fileSizeEl.textContent = `File Size: ${sizeInMB} MB`;
+          }
+          CONFIG.apkUrl = apkAsset.browser_download_url;
+          CONFIG.fileName = apkAsset.name;
+        } else {
+          if (fileSizeEl) fileSizeEl.textContent = "File Size: N/A";
+        }
+      })
+      .catch((err) => {
+        console.warn("Could not fetch APK info from GitHub:", err);
+        if (fileSizeEl) fileSizeEl.textContent = "File Size: unavailable";
+      });
+  }
 
   /**
    * Sets up the mobile menu toggle functionality.
